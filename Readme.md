@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Февзи Мухтаров](https://up.htmlacademy.ru/htmlcss/26/user/1060969).
-* Наставник: [Февзи Мухтаров](https://up.htmlacademy.ru/htmlcss/26/user/367335).
+* Наставник: [Андрей Ефимов](https://up.htmlacademy.ru/htmlcss/26/user/367335).
 
 ---
 
