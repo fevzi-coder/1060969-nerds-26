@@ -4,56 +4,36 @@ body {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 400;
     color: #283136;
 
-    background-color: white;
-    background-image: url(img/whiteback.png);
-    background-position: top center;
-    background-repeat:no-repeat;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
-.site-navigation,
-.user-navigation {
+a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation ul {
     list-style: none;
 }
 
-.site-navigation a {
+.main-navigation a {
     font: inherit;
     line-height: 30px;
     font-weight: 500;
-    color: #000000;    
+    color: #000000;
 }
 
-.site-navigation a:hover {
-    color: #fb565a;   
-}
-
-.site-navigation a:active {
-    color: rgba(0, 0, 0, 0.302);    
-}
-
-.user-navigation a{
-    font: inherit;
-    line-height: 30px;
-    font-weight: 500;
-    color: #000000;      
-}
-
-.user-navigation a:hover {
-    color: #fb565a;     
-}
-
-.user-navigation a:active {
-    color: rgba(0, 0, 0, 0.302); 
+.main-navigation a:hover {
+    color: #fb565a;
 }
 
 .button {
-    font-family: "Roboto", "Arial", sans-serif;
+    font: inherit;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -65,49 +45,51 @@ a {
 }
 
 .button:hover {
-    background-color: #e74246;    
+    background-color: #e74246;
 }
 
 .button:active {
     background-color: #d7373b;
 
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.302);
+    color: rgba(255, 255, 255, 0.3);
 }
 
-.button_application{
+.button-green{
+    font: inherit;
+    color: #ffffff;
+
     background-color: #00ca74;
-    color: #ffffff;
+
 }
 
-.button_application:hover {
-    background-color: #00bc6c;    
+.button-green:hover {
+    background-color: #00bc6c;
 }
-    
-.button_application:active {
+
+.button-green:active {
     background-color: #00aa62;
-        
-    font-family: "Roboto", "Arial", sans-serif;
+
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.302);
+    color: rgba(255, 255, 255, 0.3);
 }
 
-.button_plantation{
-    background-color: #efc84a;
-    color: #ffffff;
+.button-yellow {
+  font: inherit;
+  color: #ffffff;
+
+  background-color: #efc84a;
+
 }
-    
-.button_plantation:hover {
-    background-color: #eab534;    
+
+.button-yellow:hover {
+  background-color: #eab534;
 }
-        
-.button_plantation:active {
-    background-color: #e5a722;
-            
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.302);
+
+.button-yellow:active {
+  background-color: #e5a722;
+
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .features-list {
@@ -118,25 +100,25 @@ a {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
-    color: #000000;   
+    color: #000000;
 }
 
 .projects {
-    list-style: none;    
+    list-style: none;
 }
 
 .project h3 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
-    color: #000000; 
+    color: #000000;
     text-transform: uppercase;
 }
 
 .application-header {
     font-size: 45px;
-    line-height: 45px; 
-    color: #000000;    
+    line-height: 45px;
+    color: #000000;
 }
 
 .applications h3 {
@@ -146,27 +128,27 @@ a {
 .foot-head {
     font-size: 36px;
     line-height: 36px;
-    color: #000000; 
+    color: #000000;
 }
 
-main h1 {
+.main-catolog h1 {
     font:inherit;
     font-size: 55px;
     line-height: 55px;
-    color: #000000;   
+    color: #000000;
 }
 
-fieldset legend,
-.container p {
+.form-header,
+.form-item p {
     font:inherit;
     text-transform: uppercase;
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
-    color: #000000; 
+    color: #000000;
 }
 
-.show {
+.button-form {
     font:inherit;
     font-size:16px;
     line-height: 18px;
@@ -176,57 +158,47 @@ fieldset legend,
     border:none;
 }
 
-.show:hover {
+.button-form:hover {
     background-color: #dfdfdf;
 }
 
-.show:active {
-    color: rgba(0, 0, 0, 0.302);
-    background-color: #d5d5d5; 
+.button-form:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #d5d5d5;
 }
- 
 
-.container ul {
+
+.form-item ul {
     list-style: none;
     text-transform: uppercase;
 }
 
-.filter-price {
+.filter-sort {
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
-    color: #000000;      
+    color: #000000;
 }
 
-.filter-type,
-.filter-name {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.302); 
+.text {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .template-list {
     list-style: none;
 }
 
-.template-list a {
-
-}
-
 .template {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
-    color: #000000; 
+    color: #000000;
 }
 
-.template:hover {
+.template-title:hover {
     color: #fb565a;
 }
- 
-.template:active {
-    color: rgba(0, 0, 0, 0.302);  
-}
+
+
 
 
