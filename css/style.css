@@ -59,7 +59,6 @@ a:active {
     color: #ffffff;
 
     background-color: #00ca74;
-
 }
 
 .button-green:hover {
@@ -69,7 +68,6 @@ a:active {
 .button-green:active {
     background-color: #00aa62;
 
-    font-weight: 500;
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -131,7 +129,7 @@ a:active {
     color: #000000;
 }
 
-.main-catolog h1 {
+.catolog h1 {
     font:inherit;
     font-size: 55px;
     line-height: 55px;
