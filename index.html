@@ -1,170 +1,222 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header>
-      <nav class="main-navigation">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
-        <ul class="site-navigation">
-          <li><a href="#nowhere">Студия</a></li>
-          <li><a href="#nowhere">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#nowhere">Контакты</a></li>
-        </ul>
-        <ul>
-          <li class="user-navigation">
-             <a class="basket" href="#nowhere">Корзина</a>
-           </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Дизайн-студия "Нёрдс"</h1>
-      <section>
-        <h2 class="visually-hidden">Преимущества дизайн-студии "Нёрдс"</h2>
-        <ul class="features-list">
-          <li class="features-item">
-            <h3>Долго, дорого,<br>скрупулезно.</h3>
-            <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-            <p>
-              <a class="button" href="#nowhere">Узнать больше</a>
-            </p>
-          </li>
-          <li class="features-item">
-            <h3>Любим математику<br>как никто другой</h3>
-            <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
-            <p>
-              <a class="button" href="#nowhere">Узнать больше</a>
-            </p>
-          </li>
-          <li class="features-item">
-            <h3>Только ночь,<br>только хардкор</h3>
-            <p>Работать днем, как все? Мы против этого.<br>
-              Ближе к полуночи работа только начинается.</p>
-            <p>
-              <a class="button" href="#nowhere">Узнать больше</a>
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Список видов проектов</h2>
-        <ul class="projects">
-          <li class="project">
-            <h3>Веб-сайты</h3>
-            <p>
-              Мир никогда не будет прежним после того как увидит ваш сайт!
-            </p>
-            <p>
-              <a class="button" href="#nowhere">Заказать</a>
-            </p>
-          </li>
-          <li class="project">
-            <h3>Приложения</h3>
-            <p>
-              Покорите топ-10 приложений в AppStore и Google Play
-            </p>
-            <p>
-              <a class="button-green button" href="#nowhere">Заказать</a>
-            </p>
-          </li>
-          <li class="project">
-            <h3>Презентации</h3>
-            <p>
-              Вы даже не подозреваете, насколько вы изумительны!
-            </p>
-            <p>
-              <a class="button-yellow button" href="#nowhere">Заказать</a>
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="applications">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+  <header class="main-header">
+    <nav class="main-navigation container">
+      <a class="main-header-logo" href="#"><img src="img/nerds-logo.svg" width="160" height="65"
+          alt="Логотип дизайн-студии «Нёрдс»"></a>
+      <ul class="site-navigation">
+        <li><a class="link-navigation" href="#nowhere">Студия</a></li>
+        <li><a class="link-navigation" href="#nowhere">Клиенты</a></li>
+        <li><a class="link-navigation" href="catalog.html">Магазин</a></li>
+        <li><a class="link-navigation" href="#nowhere">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li>
+          <a class="link-navigation basket" href="#nowhere">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
+    <section class="slide">
+      <h2 class="visually-hidden clean">Преимущества дизайн-студии "Нёрдс"</h2>
+      <div class="slider-controls">
+        <i class="slider-controls-bulet active"></i>
+        <i class="slider-controls-bulet"></i>
+        <i class="slider-controls-bulet"></i>
+      </div>
+      <ul class="slider-list container">
+        <li class="slider-item slider-item1">
+          <h3 class="slider-header slider-header-page">Долго, дорого, скрупулезно.</h3>
+          <p class="slider-paragraph">Математически выверенный дизайн<br>для вашего сайта или мобильного
+            приложения.</p>
+          <a class="slider-button button" href="#nowhere">Узнать больше</a>
+        </li>
+        <li class="slider-item slider-item2 hidden">
+          <h3 class="slider-header slider-header-page">Любим математику<br>как никто другой</h3>
+          <p class="slider-paragraph">Никакого креатива, только математические формулы<br>для расчета идеальных
+            пропорций.</p>
+          <a class="slider-button button" href="#nowhere">Узнать больше</a>
+        </li>
+        <li class="slider-item slider-item3 hidden">
+          <h3 class="slider-header slider-header-page">Только ночь,<br>только хардкор</h3>
+          <p class="slider-paragraph">Работать днем, как все? Мы против этого.<br>
+            Ближе к полуночи работа только начинается.</p>
+          <a class="slider-button button" href="#nowhere">Узнать больше</a>
+        </li>
+      </ul>
+    </section>
+    <section class="projects container">
+      <h2 class="visually-hidden">Список видов проектов</h2>
+      <ul class="projects-list">
+        <li class="project project-illustration1">
+          <h3 class="project-header">Веб-сайты</h3>
+          <p class="project-paragraph">
+            Мир никогда не будет прежним после того как увидит ваш сайт!
+          </p>
+          <p>
+            <a class="project-button1 button" href="#nowhere">Заказать</a>
+          </p>
+        </li>
+        <li class="project project-illustration2">
+          <h3 class="project-header">Приложения</h3>
+          <p class="project-paragraph">
+            Покорите топ-10 приложений в AppStore и Google Play
+          </p>
+          <p>
+            <a class="project-button2 button" href="#nowhere">Заказать</a>
+          </p>
+        </li>
+        <li class="project project-illustration3">
+          <h3 class="project-header">Презентации</h3>
+          <p class="project-paragraph">
+            Вы даже не подозреваете, насколько вы изумительны!
+          </p>
+          <p>
+            <a class="project-button3 button" href="#nowhere">Заказать</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="applications container">
+      <div class="applications-item1">
         <h2 class="visually-hidden">Рекламный блок</h2>
-        <p class="application-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p>
+        <p class="application-header1">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="application-paragraph">
           Исповедуем принципы минимализма и чистоты. Ставим математический расчет
           превыше креатива. Работаем не покладая рук, как роботы.
         </p>
-        <h3>Выполняем заказы на разработку:</h3>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        <h3 class="application-header-list">Выполняем заказы на разработку:</h3>
+        <ul class="application-list">
+          <li class="application-list-item">Веб-сайтов любой сложности</li>
+          <li class="application-list-item">Мобильных приложений для iOS и Android</li>
+          <li class="application-list-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-        <img src="img/nerds-illustration.png" width="360" height="208" alt="Илюстрация логотипа">
-        <h3>с 2004 года любим точность во всем:</h3>
-        <dl>
-          <dt>Уровень самоотдачи</dt>
-          <dd>146%</dd>
-          <dt>Соблюдение сроков</dt>
-          <dd>100%</dd>
-          <dt>Минимальная предоплата</dt>
-          <dd>50%</dd>
+      </div>
+      <div class="applications-item2">
+        <img class="application-illustration" src="img/nerds-illustration.png" width="360" height="208"
+          alt="Илюстрация логотипа">
+        <h3 class="application-header2">с 2004 года любим точность во всем:</h3>
+        <dl class="application-descriptions">
+          <div class="application-descriptions-item">
+            <dd class="descriptions-item-value">146
+              <span class="descriptions-item-percent">%</span>
+            </dd>
+            <dt>Уровень<br>самоотдачи</dt>
+          </div>
+          <div class="application-descriptions-item">
+            <dd class="descriptions-item-value">100
+              <span class="descriptions-item-percent">%</span>
+            </dd>
+            <dt>Соблюдение<br>сроков</dt>
+          </div>
+          <div class="application-descriptions-item">
+            <dd class="descriptions-item-value">50
+              <span class="descriptions-item-percent">%</span>
+            </dd>
+            <dt>Минимальная<br>предоплата</dt>
+          </div>
         </dl>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Партнеры дизайн-студии «Нёрдс»</h2>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-1.png" width="199" height="68" alt="Логотип онлайн-курсов HTMLАкадемии">
-        </a>
-        <a href="#nowhere">
-          <img src="img/logo-2.png" width="209" height="90" alt="Логотип барбершопа Бородинский">
-        </a>
-        <a href="#nowhere">
-          <img src="img/logo-3.png" width="185" height="52" alt="Логотип продуктового лендинга Пинк">
-        </a>
-        <a href="#nowhere">
-          <img src="img/logo-4.png" width="173" height="84" alt="Логотип интернет-магазина вязанных игрушек Мишка">
-        </a>
-      </section>
-      <section>
-          <h2 class="visually-hidden">Как до нас добраться</h2>
-          <p>
-            <img src="img/map.png" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-          </p>
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>
-              191186, Санкт-Петербург,
-              ул. Б. Конюшенная, д. 19/8
-              <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-            </p>
-            <a class="button" href="#nowhere">Напишите нам</a>
-      </section>
-      <section>
-        <h2>Напишите нам</h2>
-        <form class="feedback" method="POST" action="https://echo.htmlacademy.ru">
-          <p>
-            <label for="feedback-name">Ваше имя:</label>
-            <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="feedback-email">Ваш e-mail:</label>
-            <input id="feedback-email" type="email" name="e-mail" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="feedback-text">Текст письма:</label>
-            <textarea id="feedback-text" name="text-email" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-        <button type="button">Закрыть</button>
-      </section>
-    </main>
-    <footer>
-      <ul>
-        <li><a href="#nowhere">Вконтакте</a></li>
-        <li><a href="#nowhere">Фейсбук</a></li>
-        <li><a href="#nowhere">Инстаграм</a></li>
+      </div>
+    </section>
+    <section class="partners container">
+      <h2 class="visually-hidden">Партнеры дизайн-студии «Нёрдс»</h2>
+      <ul class="partners-list clean">
+        <li class="partners-item partners-logo1">
+          <a class="partners-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-1.png" width="199" height="68" alt="Логотип онлайн-курсов HTMLАкадемии">
+          </a>
+        </li>
+        <li class="partners-item partners-logo2">
+          <a class="partners-link" href="#nowhere">
+            <img src="img/logo-2.png" width="209" height="90" alt="Логотип барбершопа Бородинский">
+          </a>
+        </li>
+        <li class="partners-item partners-logo3">
+          <a class="partners-link" href="#nowhere">
+            <img src="img/logo-3.png" width="185" height="52" alt="Логотип продуктового лендинга Пинк">
+          </a>
+        </li>
+        <li class="partners-item partners-logo4">
+          <a class="partners-link" href="#nowhere">
+            <img src="img/logo-4.png" width="173" height="84" alt="Логотип интернет-магазина вязанных игрушек Мишка">
+          </a>
+        </li>
       </ul>
-      <p class="foot-head">Давайте дружить это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </footer>
-  </body>
+    </section>
+    <section class="contacts">
+      <p>
+        <img class="contacts-illustration" src="img/contacts.png" width="1440" height="416"
+          alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <div class="container">
+        <div class="contacts-inner">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <h3 class="contacts-header">NЁRDS DESIGN STUDIO</h3>
+          <p class="contacts-address">
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <a class="contacts-button button" href="#nowhere">Напишите нам</a>
+        </div>
+      </div>
+    </section>
+    <section class="modal modal-login hidden">
+      <h2 class="modal-header">Напишите нам</h2>
+      <form class="feedback" method="POST" action="https://echo.htmlacademy.ru">
+        <p class="modal-info">
+          <label class="modal-label" for="feedback-name">Ваше имя:</label>
+          <input class="modal-input" id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="modal-info">
+          <label class="modal-label" for="feedback-email">Ваш e-mail:</label>
+          <input class="modal-input" id="feedback-email" type="email" name="e-mail" placeholder="email@example.com">
+        </p>
+        <p class="modal-mail">
+          <label class="modal-label" for="feedback-text">Текст письма:</label>
+          <textarea class="modal-input" id="feedback-text" name="text-email" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="modal-button button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+  </main>
+  <footer class="social-network container">
+    <ul class="social-network-list">
+      <li><a class="social-network-link" href="#nowhere">
+        <span class="visually-hidden">Вконтакте</span>
+        <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="26" height="15"><path d="M16.1 11.5c1-.3 2.2 2 3.5 3 1 .6 1.7.5 1.7.5h3.5s1.8-.2 1-1.6c0-.1-.5-1-2.6-3-2.2-2-1.9-1.8.7-5.3 1.6-2.1 2.3-3.5 2-4-.1-.6-1.3-.4-1.3-.4h-4c-.3 0-.6.1-.8.5 0 0-.6 1.7-1.4 3.1-1.7 3-2.4 3.2-2.7 3-.7-.5-.5-1.8-.5-2.7 0-2.9.4-4.1-.9-4.4-.4-.1-.7-.2-1.8-.2-1.4 0-2.6 0-3.2.3-.5.3-.8.7-.6.8.2 0 .8.1 1.1.6.4.5.4 1.7.4 1.7s.3 3.5-.5 3.9c-.5.3-1.3-.3-2.8-3-.8-1.4-1.4-3-1.4-3L5.2 1 4.6.7H.8S.3.7.1.9c-.2.3 0 .7 0 .7S3 8.5 6.3 12c3 3.1 6.4 3 6.4 3h1.6s.4-.1.7-.4c.2-.2.2-.7.2-.7s0-2 1-2.4z"/></svg>
+      </a></li>
+      <li><a class="social-network-link" href="#nowhere">
+        <span class="visually-hidden">Фейсбук</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+        </svg>
+      </a></li>
+      <li><a class="social-network-link" href="#nowhere">
+        <span class="visually-hidden">Инстаграм</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
+        </svg>
+      </a></li>
+    </ul>
+    <div class="social-network-info">
+      <p class="social-network-info1">Давайте дружить, это выгодно!</p>
+      <p class="social-network-info2">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
