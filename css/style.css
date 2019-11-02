@@ -510,6 +510,7 @@ html, body {
 .partners-list {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .partners-item {
@@ -584,7 +585,9 @@ html, body {
 }
 
 .partners-logo4 {
-  padding: 7px 0 0 83px;
+  position: absolute;
+  left: 944px;
+  top: 7px;
 }
 
 .contacts {
@@ -642,6 +645,7 @@ html, body {
 
 .social-network {
   display: flex;
+  padding-bottom: 50px;
 }
 
 .social-network-list {
@@ -679,11 +683,11 @@ html, body {
 }
 
 .social-network-info {
-  width: 545px;
+  width: 760px;
 }
 
 .social-network-info1 {
-  width: 545px;
+  width: 100%;
   margin: 0 0 10px 0;
   padding-top: 6px;
   font-size: 36px;
@@ -1004,10 +1008,10 @@ html, body {
   left: -36px;
   width: 25px;
   height: 25px;
-  background-image: url("../img/radio-off.svg");
+  background-image: url("../img/radio-off1.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 .filter-input-radio:checked + label::after {
@@ -1017,10 +1021,10 @@ html, body {
   left: -36px;
   width: 25px;
   height: 25px;
-  background-image: url("../img/radio-on.svg");
+  background-image: url("../img/radio-on1.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 .button-form {
@@ -1081,6 +1085,7 @@ html, body {
 }
 
 .template-list-item {
+  display: block;
   width: 360px;
   margin-right: 40px;
   margin-bottom: 25px;
@@ -1118,6 +1123,24 @@ html, body {
 }
 
 .template-info {
+  display: none;
+}
+
+/* .template-info:focus-within {
+  position: absolute;
+  display: block;
+  bottom: 9px;
+  left: 0px;
+  width: 290px;
+  text-align: center;
+  padding: 32px 34px 36px 35px;
+  background-color: #eeeeee;
+  max-height: 576px;
+  overflow-y: auto;
+} */
+
+
+.template-info {
   position: absolute;
   bottom: 9px;
   left: 0px;
@@ -1125,6 +1148,16 @@ html, body {
   text-align: center;
   padding: 32px 34px 36px 35px;
   background-color: #eeeeee;
+  max-height: 576px;
+  overflow-y: auto;
+}
+
+.template-list-item:hover .template-info {
+  display: block;
+}
+
+.template-list-item:focus-within .template-info {
+  display: block;
 }
 
 .template-header {
