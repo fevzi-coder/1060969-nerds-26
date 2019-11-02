@@ -476,28 +476,32 @@ html, body {
 }
 
 .application-descriptions {
-  display: flex;
-  flex-wrap: wrap;
-  width: 360px;
-}
-
-.application-descriptions-item {
-  margin-right: 12px;
+  border-spacing: 0;
 }
 
 .descriptions-item-value {
-  margin: 0 0 24px 0;
-  padding: 0;
+  padding: 0px 12px 29px 0;
   font-weight: 700;
   font-size: 45px;
   line-height: 10px;
+  color: #000;
 }
+
 
 .descriptions-item-percent {
   position: relative;
-  top: -13px;
-  left: -10px;
+  top: -15px;
+  left: -9px;
   font-size: 27px;
+}
+
+.descriptions-item-text {
+  width: 33.33333%;
+  padding: 0;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #283136;
 }
 
 .partners {
