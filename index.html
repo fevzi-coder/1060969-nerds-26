@@ -6,7 +6,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/minimal.css">
 </head>
 
 <body class="page">
@@ -29,33 +29,40 @@
   </header>
   <main>
     <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
-    <section class="slide">
+    <section class="slider">
       <h2 class="visually-hidden clean">Преимущества дизайн-студии "Нёрдс"</h2>
-      <div class="slider-controls">
-        <i class="slider-controls-bulet active"></i>
-        <i class="slider-controls-bulet"></i>
-        <i class="slider-controls-bulet"></i>
-      </div>
-      <ul class="slider-list container">
-        <li class="slider-item slider-item1">
-          <h3 class="slider-header slider-header-page">Долго, дорого, скрупулезно.</h3>
-          <p class="slider-paragraph">Математически выверенный дизайн<br>для вашего сайта или мобильного
-            приложения.</p>
-          <a class="slider-button button" href="#nowhere">Узнать больше</a>
-        </li>
-        <li class="slider-item slider-item2 hidden">
-          <h3 class="slider-header slider-header-page">Любим математику<br>как никто другой</h3>
-          <p class="slider-paragraph">Никакого креатива, только математические формулы<br>для расчета идеальных
-            пропорций.</p>
-          <a class="slider-button button" href="#nowhere">Узнать больше</a>
-        </li>
-        <li class="slider-item slider-item3 hidden">
-          <h3 class="slider-header slider-header-page">Только ночь,<br>только хардкор</h3>
-          <p class="slider-paragraph">Работать днем, как все? Мы против этого.<br>
-            Ближе к полуночи работа только начинается.</p>
-          <a class="slider-button button" href="#nowhere">Узнать больше</a>
-        </li>
-      </ul>
+      <div class="container">
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1"><span
+              class="visually-hidden">Первый</span></label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2"><span
+              class="visually-hidden">Второй</span></label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3"><span
+              class="visually-hidden">Третий</span></label>
+        </div>
+        <ul class="slider-list container">
+          <li class="slider-item slider-item1">
+            <h3 class="slider-header slider-header-page">Долго, дорого, скрупулезно.</h3>
+            <p class="slider-paragraph">Математически выверенный дизайн<br>для вашего сайта или мобильного
+              приложения.</p>
+            <a class="slider-button button" href="#nowhere">Узнать больше</a>
+          </li>
+          <li class="slider-item slider-item2 hidden">
+            <h3 class="slider-header slider-header-page">Любим математику<br>как никто другой</h3>
+            <p class="slider-paragraph">Никакого креатива, только математические формулы<br>для расчета идеальных
+              пропорций.</p>
+            <a class="slider-button button" href="#nowhere">Узнать больше</a>
+          </li>
+          <li class="slider-item slider-item3 hidden">
+            <h3 class="slider-header slider-header-page">Только ночь,<br>только хардкор</h3>
+            <p class="slider-paragraph">Работать днем, как все? Мы против этого.<br>
+              Ближе к полуночи работа только начинается.</p>
+            <a class="slider-button button" href="#nowhere">Узнать больше</a>
+          </li>
+        </ul>
     </section>
     <section class="projects container">
       <h2 class="visually-hidden">Список видов проектов</h2>
@@ -151,6 +158,8 @@
       </ul>
     </section>
     <section class="contacts">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="1440" height="416" frameborder="1"
+        allowfullscreen="true"></iframe>
       <p>
         <img class="contacts-illustration" src="img/contacts.png" width="1440" height="416"
           alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
@@ -168,7 +177,7 @@
         </div>
       </div>
     </section>
-    <section class="modal modal-login hidden">
+    <section class="modal modal-login">
       <h2 class="modal-header">Напишите нам</h2>
       <form class="feedback" method="POST" action="https://echo.htmlacademy.ru">
         <p class="modal-info">
@@ -218,6 +227,7 @@
       <p class="social-network-info2">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+  <script src="js/minimal.js"></script>
 </body>
 
 </html>

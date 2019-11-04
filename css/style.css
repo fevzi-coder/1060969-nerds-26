@@ -1,18 +1,17 @@
+
 body {
   margin: 0;
+  min-width: 1200px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-a:active {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation {
@@ -67,7 +66,8 @@ a:active {
 
 .button {
   display: inline-block;
-  padding: 17px 0px 15px 0px;
+  padding: 17px 15px 15px 15px;
+  min-width: 50px;
   font: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -75,6 +75,7 @@ a:active {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  vertical-align: middle;
   background-color: #fb565a;
   border: none;
   border-radius: 3px;
@@ -90,7 +91,7 @@ a:active {
 }
 
 .project-button1, .project-button2, .project-button3 {
-  width: 160px;
+  min-width: 130px;
 }
 
 .project-button2 {
@@ -136,7 +137,7 @@ a:active {
 }
 
 .slider-button {
-  width: 240px;
+  min-width: 210px;
 }
 
 .project-header {
@@ -291,7 +292,7 @@ html, body {
   background-color: #eeeeee;
 }
 
-.slide {
+.slider {
   position: relative;
   width: 100%;
   background-color: #eeeeee;
@@ -310,17 +311,18 @@ html, body {
   transform: translateX(-50%);
 }
 
-.slider-controls-bulet {
+.slider-controls label {
   position: relative;
   display: inline-block;
   width: 18px;
   height: 18px;
   padding: 8px;
+  vertical-align: middle;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.slider-controls-bulet::after {
+.slider-controls label::after {
   content: "";
   position: absolute;
   top: 8px;
@@ -328,11 +330,52 @@ html, body {
   z-index: 1;
   width: 18px;
   height: 18px;
-  border-radius: 50%;
   background: #ffffff;
+  border-radius: 50%;
 }
 
-.active::before {
+.slider-list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-item {
+  display: none;
+  padding: 71px 640px 80px 0;
+  background-repeat: no-repeat;
+  background-position: 93% 100%;
+}
+
+.slider-item:nth-child(1) {
+  background-image: url("../img/slide1.png");
+}
+
+.slider-item:nth-child(2) {
+  background-image: url("../img/slide2.png");
+  background-position: 100% 100%;
+}
+
+.slider-item:nth-child(3) {
+  background-image: url("../img/slide3.png");
+  background-position: 100% 100%;
+}
+
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -344,32 +387,6 @@ html, body {
   background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
-}
-
-.slider-list {
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-}
-
-.slider-item {
-  padding: 71px 640px 80px 0;
-  background-repeat: no-repeat;
-  background-position: 93% 100%;
-}
-
-.slider-item1 {
-  background-image: url("../img/slide1.png");
-}
-
-.slider-item2 {
-  background-image: url("../img/slide2.png");
-  background-position: 100% 100%;
-}
-
-.slider-item3 {
-  background-image: url("../img/slide3.png");
-  background-position: 100% 100%;
 }
 
 .projects-list {
@@ -605,6 +622,7 @@ html, body {
   width: 270px;
   background-color: #ffffff;
   padding: 30px 0px 50px 50px;
+  z-index: 3;
 }
 
 .contacts-illustration {
@@ -612,7 +630,19 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
+  margin: 0;
 }
+
+.contacts iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 2;
+  border: none;
+}
+
 
 .contacts-header {
   margin-bottom: 23px;
@@ -634,7 +664,7 @@ html, body {
 
 .contacts-button {
   margin-top: 22px;
-  width: 219px;
+  min-width: 189px;
 }
 
 .contacts-phone {
@@ -704,8 +734,49 @@ html, body {
   margin: 0;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   position: fixed;
+  display: none;
   background-color: #ffffff;
   background-image: url("../img/white-back-modal.png");
   background-position: 0 0;
@@ -719,6 +790,16 @@ html, body {
   width: 860px;
   margin-left: -481px;
   padding: 32px 0 83px 101px;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+  z-index: 4;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-close {
@@ -790,7 +871,7 @@ html, body {
 }
 
 .modal-button {
-  width: 260px;
+  min-width: 260px;
 }
 
 .catalog-header {
@@ -919,7 +1000,7 @@ html, body {
 .price-controls label {
   display: inline-block;
   width: 50%;
-
+  vertical-align: middle;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -1032,7 +1113,7 @@ html, body {
 }
 
 .button-form {
-  width: 260px;
+  min-width: 260px;
   color: black;
 }
 
@@ -1130,20 +1211,6 @@ html, body {
   display: none;
 }
 
-/* .template-info:focus-within {
-  position: absolute;
-  display: block;
-  bottom: 9px;
-  left: 0px;
-  width: 290px;
-  text-align: center;
-  padding: 32px 34px 36px 35px;
-  background-color: #eeeeee;
-  max-height: 576px;
-  overflow-y: auto;
-} */
-
-
 .template-info {
   position: absolute;
   bottom: 9px;
@@ -1170,7 +1237,7 @@ html, body {
 
 .template-button {
   margin: 14px 0 5px 0;
-  width: 200px;
+  min-width: 200px;
   padding: 16px 0 15px 0;
 }
 
@@ -1184,7 +1251,7 @@ html, body {
 
 .page-number-item {
   box-sizing: border-box;
-  width: 50px;
+  min-width: 50px;
   margin: 0 11px 10px 0;
   color: #000;
   background-color: #eeeeee;
@@ -1200,7 +1267,7 @@ html, body {
 .page-number-item:not([href]),
 .page-number-item:not([href]):active,
 .page-number-item:not([href]):hover {
-  padding: 14px 0px 12px;
+  padding: 14px 5px 12px;
   color: inherit;
   background-color: #fff;
   border: 3px solid #eeeeee;
