@@ -736,19 +736,19 @@ html, body {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translateY(-1200px);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translateY(-55%);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translateY(-45%);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(-50%);
   }
 }
 
@@ -785,11 +785,12 @@ html, body {
 }
 
 .modal-login {
-  top: 0;
+  top: 50%;
   left: 50%;
   width: 860px;
   margin-left: -481px;
   padding: 32px 0 83px 101px;
+  transform: translateY(-50%);
 }
 
 .modal-show {
